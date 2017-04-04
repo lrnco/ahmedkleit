@@ -1,0 +1,58 @@
+---
+---
+
+@import "normalize";
+
+// Variables
+$color__main: #0eabad;
+$color__sec: #003c3c;
+$color_light_gray: #dcdcdc;
+$font__main: 'Lato', sans-serif;
+
+
+// Definitions
+html, body {
+    font-family: $font__main;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+nav {
+    height: 48px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px $color_light_gray;
+
+    #nav-menu {
+        font-size: 13.5px;
+        display: flex;
+        align-items: center;
+        #nav-close {
+          display: none;
+        }
+        a {
+            color: $color__sec;
+            padding-right: 10px;
+            opacity: 0;
+            transform: translateX(100vw);
+            transition: transform 0.25s ease-out, opacity 0.25s ease;
+        }
+        a:last-child {
+            padding-right: 0;
+        }
+        &.open{
+            a {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            #nav-close {
+              display: block;
+            }
+            #nav-icon {
+              display: none;
+            }
+        }
+    }
+}

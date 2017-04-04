@@ -1,0 +1,16 @@
+title: Ahmed Kleit
+email: kleit.ahmed@gmail.com
+description: Ahmed Kleit Portfolio
+baseurl: ""
+url: ""
+
+# Build Settings
+markdown: kramdown
+sass:
+  sass_dir: /assets/css
+  style: compressed
+gems:
+  - jekyll-autoprefixer
+exclude:
+  - Gemfile
+  - Gemfile.lock
