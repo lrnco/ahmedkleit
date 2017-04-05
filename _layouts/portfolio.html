@@ -1,5 +1,9 @@
 {% include header.html %}
 
-{{ content }}
+<div id="project-single" class="container">
+  <div class="return"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/icons/arrow-left.svg" alt="Return"/></a></div>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</div>
 
 {% include footer.html %}

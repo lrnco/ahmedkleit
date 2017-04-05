@@ -1,0 +1,19 @@
+#project-single {
+    h1 {
+      color: $color__main;
+    }
+}
+.return {
+  display: none;
+}
+@include media-breakpoint-up(lg) {
+    .return {
+        float: left;
+        display: block;
+        margin-left: -100px;
+        margin-top: -10px;
+        a img {
+          height: 38px;
+        }
+    }
+}

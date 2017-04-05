@@ -29,5 +29,7 @@ $(document).ready(function(){
       links: true,
       limit: '12',
   });
-  feed.run();
+	if (window.location.pathname === '/' || window.location.pathname === '/ahmedkleit/') {
+	  feed.run();
+	}
 });
