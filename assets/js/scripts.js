@@ -10,7 +10,7 @@ $(document).ready(function(){
 	}
 
 	$("#nav-menu > a").click(function(e) {
-			if (window.location.pathname === '/') {
+			if (window.location.pathname === '/' || window.location.pathname === '/ahmedkleit/') {
 		    e.preventDefault();
 		    goToByScroll(this.id);
 			}
