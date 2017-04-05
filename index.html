@@ -4,7 +4,7 @@ layout: home
 
 <!-- Welcome -->
 <section id="main" class="container">
-    <img src="{{ site.baseurl }}/assets/icons/ahmed_brand.svg" alt="Ahmed Kleit"/>
+    {% include_relative {{ site.baseurl }}/assets/icons/ahmed_brand.svg %}
     <p>
       Hi, my name is Ahmed Kleit.<br>
       27 years old, Brazilian, raised in Ivory Coast.<br>
@@ -13,7 +13,7 @@ layout: home
     </p>
     <div class="social-icons">
       {% for icon in site.data.main.social %}
-        <div><a href="{{ icon.url }}"><img src="{{ site.baseurl }}/assets/icons/{{ icon.title }}.svg" alt="{{ icon.url }}"/></a></div>
+        <div><a href="{{ icon.url }}">{% include_relative {{ site.baseurl }}/assets/icons/{{ icon.title }}.svg %}</a></div>
       {% endfor %}
     </div>
 </section>
@@ -27,8 +27,8 @@ layout: home
       <a href="{{ site.baseurl }}{{ project.permalink }}">
         <div class="project">
           <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
-          <img class="chevron-right" src="{{ site.baseurl }}/assets/icons/chevron-right.svg" alt="{{ project.title }}"/>
           <div class="project-detail">
+            <div class="chevron-right">{% include_relative {{ site.baseurl }}/assets/icons/chevron-right.svg %}</div>
             <h2>{{ project.title }}</h2>
             <h3>{{ project.subtitle }}</h3>
             <p><small>{{ project.description }}</small></p>
@@ -41,19 +41,21 @@ layout: home
 
 
 <!-- About me -->
-<section id="about-me" class="container border-bottom">
-    <h2 class="title">about me</h2>
-    <p class="description">Create digital products focusing on results. Imagine solutions that add value. Think of improvements for a better experience. All this inspires me every day.</p>
-    <div class="about-main">
-      <p><strong>Partner at <a class="underline" href="#">BMK Partners</a><br>Go-To-Market Consultant <br>March 2015 - Present</strong></p>
-      <p><strong>Co-creator at <a class="underline" href="#">101 Chefs</a><br>Product Owner <br>September 2015 - Present</strong></p>
-      <p><strong>Co-creator at <a class="underline" href="#">Coletive.Co</a><br>Product Owner <br>December 2016 - Present</strong></p>
-    </div>
-    <div class="about-sec">
-      <p><small>Co-creator at <a class="underline" href="#">Baobba</a><br>Creating business on horizontal structure <br>May 2015 - September 2016</small></p>
-      <p><small>User Interface Design for the next car generation: Peugeot, Citroën and DS<br>PSA Peugeot Citroën <br>May 2014 - December 2014</small></p>
-      <p><small>University Panthéon Sorbonne (France - Paris) <br>Master II - Multimédia, Interactive Media Design</small></p>
-      <p><small>Fine Artes of São Paulo (Brasil - São Paulo) <br>Bacharel - Graphic Design</small></p>
+<section id="about-me" class="border-bottom">
+    <div class="container">
+      <h2 class="title">about me</h2>
+      <p class="description">Create digital products focusing on results. Imagine solutions that add value. Think of improvements for a better experience. All this inspires me every day.</p>
+      <div class="about-main">
+        <p><strong>Partner at <a class="underline" href="#">BMK Partners</a><br>Go-To-Market Consultant <br>March 2015 - Present</strong></p>
+        <p><strong>Co-creator at <a class="underline" href="#">101 Chefs</a><br>Product Owner <br>September 2015 - Present</strong></p>
+        <p><strong>Co-creator at <a class="underline" href="#">Coletive.Co</a><br>Product Owner <br>December 2016 - Present</strong></p>
+      </div>
+      <div class="about-sec">
+        <p><small>Co-creator at <a class="underline" href="#">Baobba</a><br>Creating business on horizontal structure <br>May 2015 - September 2016</small></p>
+        <p><small>User Interface Design for the next car generation: Peugeot, Citroën and DS<br>PSA Peugeot Citroën <br>May 2014 - December 2014</small></p>
+        <p><small>University Panthéon Sorbonne (France - Paris) <br>Master II - Multimédia, Interactive Media Design</small></p>
+        <p><small>Fine Artes of São Paulo (Brasil - São Paulo) <br>Bacharel - Graphic Design</small></p>
+      </div>
     </div>
 </section>
 
@@ -86,9 +88,7 @@ layout: home
       <h2 class="title">my life</h2>
       <p class="description">That's the fun part about me. Important to know: I love traveling, I talk a lot, and I'm always in good company with a cold beer. ;) (emoji beer)</p>
     </div>
-    <div id="instagram-feed">
-      <div id="instafeed"></div>
-    </div>
+    <div id="instafeed"></div>
     <a href="{{ site.data.main.see-more-social }}" class="see-more-btn"><div>see more</div></a>
 </section>
 

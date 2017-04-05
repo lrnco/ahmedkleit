@@ -1,16 +1,21 @@
 // Sections
 section {
-    margin: 24px 0;
-    h2 { color: $color__main; }
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    > h2, .container > h2 { color: $color__main; }
 }
 
-.container { padding: 0 12px; }
+.container {
+    padding: 0 12px;
+    max-width: 768px;
+    margin: 0 auto;
+}
 
 .border-bottom { border-bottom: solid 1px $color__light_gray; }
 
 @include media-breakpoint-up(sm) {
     section {
-        h2.title, p.description {
+        h2.title {
             text-align: center;
         }
     }
@@ -28,27 +33,24 @@ section {
 }
 
 // Main & Latest Projects
-.project img:not(.chevron-right) {
+.project > img {
     width: 576px;
     height: auto;
     object-fit: cover;
+    display: grid;
 }
 
 // Main Projects
 #projects {
     .project {
+        position: relative;
         margin-bottom: 24px;
         background-color: #fff;
 
-        .chevron-right {
-            float: right;
-            padding: 12px;
-        }
-
         .project-detail {
-            padding: 0px 32px 4px 12px;
+            padding: 0px 12px 4px 12px;
             border-bottom: solid 1px $color__light_gray;
-            h2, h3 { color: $color__main; }
+            .chevron-right { float: right; }
             p { color: $color__sec; }
         }
     }
@@ -59,6 +61,11 @@ section {
         display: flex;
         flex-flow: row nowrap;
         a { flex: 1 1 32%; }
+    }
+}
+
+@include media-breakpoint-only(sm) {
+    #projects {
         a:nth-child(even) .project {
             border-right: solid 1px $color__gray;
             border-left: solid 1px $color__gray;
@@ -66,12 +73,44 @@ section {
                 height: 251px;
             }
         }
-        .project {
+        .project .project-detail {
+            height: 250px;
+        }
+    }
+}
 
-            .project-detail {
-                height: 250px;
+@include media-breakpoint-up(md) {
+    #projects .project .project-detail {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        height: auto;
+        opacity: 0;
+        transition: opacity .25s ease;
+        &:hover {
+          opacity: 1;
+        }
+        h2, h3 { font-weight: 500; margin: 12px 0px; }
+        h3 { font-size: 16px; }
+        p { color: #fff }
+        .chevron-right {
+            padding: 12px;
+            svg .cls-1 {
+                fill: #fff;
             }
         }
+    }
+}
+@include media-breakpoint-between(md, lg) {
+    #projects .project>img {
+        height: 300px;
+    }
+}
+@include media-breakpoint-up(xxl) {
+    #projects .project .project-detail {
+        padding: 24px;
     }
 }
 
@@ -85,12 +124,18 @@ section {
         p { flex: 0 1 25%; }
     }
 }
+@include media-breakpoint-up(xxxl) {
+  .about-main p { flex: 0 1 33%; }
+}
 
 
 // Latest Projects
 #see-more-projects {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1530px;
+    margin: 0 auto;
     a { flex: 0 1 50%; }
     .project {
         display: grid;
@@ -113,8 +158,8 @@ section {
         height: 30px;
         font-size: 11.25px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         border: solid 1px $color__main;
         background-color: $color__lighten_gray;
         color: $color__main;
@@ -133,12 +178,24 @@ section {
         font-size: 13px;
     }
 }
+@include media-breakpoint-up(md) {
+    #see-more-projects a { flex: 0 1 24%; padding: 3px; }
+}
+@include media-breakpoint-up(lg) {
+    #see-more-projects a { padding: 5px; }
+}
+@include media-breakpoint-up(xl) {
+    #see-more-projects a { padding: 7px; }
+}
 
 
 // My Life
 #instafeed {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1530px;
+    margin: 0 auto;
     a {
         flex: 1 1 32%;
         display: grid;
@@ -154,5 +211,12 @@ section {
     #instafeed a {
         flex: 1 1 24%;
         img { height: calc(100vw / 4); }
+    }
+}
+@include media-breakpoint-up(md) {
+    #instafeed a {
+        flex: 0 1 24%;
+        margin-bottom: 20px;
+        img { height: calc(100vw / 5); }
     }
 }
