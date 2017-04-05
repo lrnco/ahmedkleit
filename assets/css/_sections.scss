@@ -8,6 +8,14 @@ section {
 
 .border-bottom { border-bottom: solid 1px $color__light_gray; }
 
+@include media-breakpoint-up(sm) {
+    section {
+        h2.title, p.description {
+            text-align: center;
+        }
+    }
+}
+
 
 //Main
 .social-icons div {
@@ -19,6 +27,12 @@ section {
     }
 }
 
+// Main & Latest Projects
+.project img:not(.chevron-right) {
+    width: 576px;
+    height: auto;
+    object-fit: cover;
+}
 
 // Main Projects
 #projects {
@@ -40,10 +54,36 @@ section {
     }
 }
 
-.project img:not(.chevron-right) {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
+@include media-breakpoint-up(sm) {
+    #projects {
+        display: flex;
+        flex-flow: row nowrap;
+        a { flex: 1 1 32%; }
+        a:nth-child(even) .project {
+            border-right: solid 1px $color__gray;
+            border-left: solid 1px $color__gray;
+            .project-detail {
+                height: 251px;
+            }
+        }
+        .project {
+
+            .project-detail {
+                height: 250px;
+            }
+        }
+    }
+}
+
+
+// About Me
+@include media-breakpoint-up(sm) {
+    .about-main {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        p { flex: 0 1 25%; }
+    }
 }
 
 
@@ -85,9 +125,17 @@ section {
         }
     }
 }
+@include media-breakpoint-up(sm) {
+    #see-more-projects a { flex: 0 1 25%; }
+    .see-more-btn div {
+        width: 110px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
 
 // My Life
-
 #instafeed {
     display: flex;
     flex-flow: row wrap;
@@ -95,5 +143,16 @@ section {
         flex: 1 1 32%;
         display: grid;
         margin: 1px;
+        img {
+            height: calc(100vw / 3);
+            object-fit: cover;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    #instafeed a {
+        flex: 1 1 24%;
+        img { height: calc(100vw / 4); }
     }
 }

@@ -96,3 +96,9 @@ footer {
         margin: 0 3px;
     }
 }
+
+@include media-breakpoint-up(sm) {
+  body {
+    font-size: 14px;
+  }
+}
