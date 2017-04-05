@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ahmed Kleit</title>
+    <title>{{ site.title }}</title>
     <meta name="theme-color" content="#0eabad">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -17,13 +17,13 @@
   </head>
   <body>
     <nav>
-      <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/icons/ahmed_brand.svg" /></a>
+      <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/icons/ahmed_logo.svg" alt="Ahmed Kleit"/></a>
       <div id="nav-menu">
-        <a href="{{ site.baseurl }}/#about-me">about me</a>
-        <a href="{{ site.baseurl }}/#projects">projects</a>
-        <a href="{{ site.baseurl }}/#my-life">my life</a>
-        <a href="{{ site.baseurl }}/#contacts">contacts</a>
-        <div id="nav-icon"><img src="{{ site.baseurl }}/assets/icons/menu.svg" /></div>
-        <div id="nav-close"><img src="{{ site.baseurl }}/assets/icons/close.svg" /></div>
+        <a id="link-about-me" href="{{ site.baseurl }}/#about-me">about me</a>
+        <a id="link-projects" href="{{ site.baseurl }}/#projects">projects</a>
+        <a id="link-my-life" href="{{ site.baseurl }}/#my-life">my life</a>
+        <a id="link-contacts" href="{{ site.baseurl }}/#contacts">contacts</a>
+        <div id="nav-icon"><img src="{{ site.baseurl }}/assets/icons/menu.svg" alt="Open menu"/></div>
+        <div id="nav-close"><img src="{{ site.baseurl }}/assets/icons/close.svg" alt="Close menu"/></div>
       </div>
     </nav>

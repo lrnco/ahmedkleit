@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="24" viewBox="-0.008 -2.122 127.015 117.245">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #0eabad;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #0eabad;
+        stroke-width: 4.66px;
+      }
+    </style>
+  </defs>
+  <path id="AK" class="cls-1" d="M66.523,72.963L49.812,36.227H41.456L24.745,72.963h9.186l3.6-7.936H53.741l3.6,7.936h9.186ZM50.476,57.827H40.792l4.87-10.669ZM67.685,72.963h8.632V62.557l3.873-4.1,11.344,14.5h10.071q-2.656-3.52-8.023-10.695t-7.36-9.8l15.383-16.239H90.926L76.317,51.31V36.227H67.685V72.963Z"/>
+  <rect class="cls-2" x="4" y="4" width="119" height="105"/>
+</svg>
