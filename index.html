@@ -4,7 +4,7 @@ layout: home
 
 <!-- Welcome -->
 <section id="main" class="container">
-    {% include_relative {{ site.baseurl }}/assets/icons/ahmed_brand.svg %}
+    <img src="{{ site.baseurl }}/assets/icons/ahmed_brand.svg" alt="Ahmed Kleit"/>
     <p>
       Hi, my name is Ahmed Kleit.<br>
       27 years old, Brazilian, raised in Ivory Coast.<br>
@@ -13,7 +13,7 @@ layout: home
     </p>
     <div class="social-icons">
       {% for icon in site.data.main.social %}
-        <div><a href="{{ icon.url }}">{% include_relative {{ site.baseurl }}/assets/icons/{{ icon.title }}.svg %}</a></div>
+        <div><a href="{{ icon.url }}"><img src="{{ site.baseurl }}/assets/icons/{{ icon.title }}.svg" alt="{{ icon.title }}"/></a></div>
       {% endfor %}
     </div>
 </section>
