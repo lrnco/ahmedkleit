@@ -7,6 +7,16 @@ url: ""
 
 # Build Settings
 markdown: kramdown
+collections:
+  projects:
+    title: Projects
+    output: true
+  pages:
+    title: Pages
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 sass:
   sass_dir: /assets/css
   style: compressed

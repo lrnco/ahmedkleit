@@ -20,4 +20,14 @@ $(document).ready(function(){
 	  $("html, body").animate({ scrollTop: 0 }, "slow");
 	  return false;
 	});
+
+
+	var feed = new Instafeed({
+      get: 'user',
+      userId: '35211881',
+      accessToken: '35211881.95346ed.2a001f82d61a4a999880b89007a4bcf7',
+      links: true,
+      limit: '12',
+  });
+  feed.run();
 });

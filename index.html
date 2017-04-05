@@ -4,7 +4,7 @@ layout: home
 
 <!-- Welcome -->
 <section id="main" class="container">
-    <img src="{{ site.baseurl }}/assets/icons/ahmed_brand.svg" alt="{{ Ahmed Kleit }}"/>
+    <img src="{{ site.baseurl }}/assets/icons/ahmed_brand.svg" alt="Ahmed Kleit"/>
     <p>
       Hi, my name is Ahmed Kleit.<br>
       27 years old, Brazilian, raised in Ivory Coast.<br>
@@ -13,7 +13,7 @@ layout: home
     </p>
     <div class="social-icons">
       {% for icon in site.data.main.social %}
-        <a href="{{ icon.url }}"><img src="{{ site.baseurl }}/assets/icons/{{ icon.title }}.svg" alt="{{ icon.url }}"/></a>
+        <div><a href="{{ icon.url }}"><img src="{{ site.baseurl }}/assets/icons/{{ icon.title }}.svg" alt="{{ icon.url }}"/></a></div>
       {% endfor %}
     </div>
 </section>
@@ -21,12 +21,12 @@ layout: home
 
 <!-- Projects -->
 <section id="projects">
-    {% assign projects = site.pages | sort: 'order' %}
+    {% assign projects = site.projects | sort: 'order' %}
     {% for project in projects %}
       {% if project.type == 'main' %}
       <a href="{{ site.baseurl }}{{ project.permalink }}">
         <div class="project">
-          <img src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="{{ project.title }}"/>
+          <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
           <img class="chevron-right" src="{{ site.baseurl }}/assets/icons/chevron-right.svg" alt="{{ project.title }}"/>
           <div class="project-detail">
             <h2>{{ project.title }}</h2>
@@ -65,18 +65,18 @@ layout: home
       <p>That's the fun part about me. Important to know: I love traveling, I talk a lot, and I'm always in good company...</p>
     </div>
     <div id="see-more-projects">
-      {% assign projects = site.pages | sort: 'order' %}
+      {% assign projects = site.projects | sort: 'order' %}
       {% for project in projects %}
-        {% if project.type == 'see-more' %}
+        {% if project.type == 'see-more' and project.order <= 8 %}
         <a href="{{ site.baseurl }}{{ project.permalink }}">
-          <div class="see-more-project">
-            <img src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="{{ project.title }}"/>
+          <div class="project">
+            <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
           </div>
         </a>
         {% endif %}
       {% endfor %}
     </div>
-    <div class="see-more-btn"><button id="projects">see more</button></div>
+    <a href="{{ site.baseurl }}/latest" class="see-more-btn"><div>see more</div></a>
 </section>
 
 
@@ -87,9 +87,9 @@ layout: home
       <p>That's the fun part about me. Important to know: I love traveling, I talk a lot, and I'm always in good company with a cold beer. ;) (emoji beer)</p>
     </div>
     <div id="instagram-feed">
-
+      <div id="instafeed"></div>
     </div>
-    <div class="see-more-btn"><button id="instagram">see more</button></div>
+    <a href="{{ site.data.main.see-more-social }}" class="see-more-btn"><div>see more</div></a>
 </section>
 
 

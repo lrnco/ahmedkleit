@@ -1,0 +1,99 @@
+// Sections
+section {
+    margin: 24px 0;
+    h2 { color: $color__main; }
+}
+
+.container { padding: 0 12px; }
+
+.border-bottom { border-bottom: solid 1px $color__light_gray; }
+
+
+//Main
+.social-icons div {
+    padding: 6px 8px;
+    display: inline-block;
+    transition: background-color .25s ease;
+    &:hover {
+      background-color: $color__gray;
+    }
+}
+
+
+// Main Projects
+#projects {
+    .project {
+        margin-bottom: 24px;
+        background-color: #fff;
+
+        .chevron-right {
+            float: right;
+            padding: 12px;
+        }
+
+        .project-detail {
+            padding: 0px 32px 4px 12px;
+            border-bottom: solid 1px $color__light_gray;
+            h2, h3 { color: $color__main; }
+            p { color: $color__sec; }
+        }
+    }
+}
+
+.project img:not(.chevron-right) {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+// Latest Projects
+#see-more-projects {
+    display: flex;
+    flex-flow: row wrap;
+    a { flex: 0 1 50%; }
+    .project {
+        display: grid;
+        margin: 1px;
+        outline-color: $color__gray;
+        transition: outline .25s ease;
+        &:hover {
+            outline: solid 8px $color__gray;
+        }
+    }
+}
+.see-more-btn {
+    margin: 32px 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    div {
+        width: 90px;
+        height: 30px;
+        font-size: 11.25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px $color__main;
+        background-color: $color__lighten_gray;
+        color: $color__main;
+        transition: background-color .25s ease, color .25s ease;
+        &:hover {
+            background-color: $color__main;
+            color: #fff;
+        }
+    }
+}
+
+// My Life
+
+#instafeed {
+    display: flex;
+    flex-flow: row wrap;
+    a {
+        flex: 1 1 32%;
+        display: grid;
+        margin: 1px;
+    }
+}

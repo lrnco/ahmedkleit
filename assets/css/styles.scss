@@ -2,19 +2,18 @@
 ---
 
 @import "normalize";
+@import "breakpoints";
 
 // Variables
 $color__main: #0eabad;
 $color__sec: #003c3c;
-$color_light_gray: #dcdcdc;
-$color_lighten_gray: #fafafa;
+$color__gray: #ebebeb;
+$color__light_gray: #dcdcdc;
+$color__lighten_gray: #fafafa;
 $font__main: 'Lato', sans-serif;
 
 
 // Definitions
 @import "main";
-@import "main-projects";
-@import "about-me";
-@import "latest-projects";
-@import "my-life";
+@import "sections";
 @import "project";
