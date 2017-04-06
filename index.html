@@ -28,7 +28,8 @@ layout: home
         <div class="project">
           <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
           <div class="project-detail">
-            <div class="chevron-right">{% include_relative {{ site.baseurl }}/assets/icons/chevron-right.svg %}</div>
+            <div class="chevron-right green"><img src="{{ site.baseurl }}/assets/icons/chevron-right.svg" alt="{{ project.title }}"/></div>
+            <div class="chevron-right white"><img src="{{ site.baseurl }}/assets/icons/chevron-right-white.svg" alt="{{ project.title }}"/></div>
             <h2>{{ project.title }}</h2>
             <h3>{{ project.subtitle }}</h3>
             <p><small>{{ project.description }}</small></p>

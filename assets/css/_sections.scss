@@ -50,7 +50,10 @@ section {
         .project-detail {
             padding: 0px 12px 4px 12px;
             border-bottom: solid 1px $color__light_gray;
-            .chevron-right { float: right; }
+            .chevron-right {
+              float: right;
+              &.white{ display: none; }
+            }
             p { color: $color__sec; }
         }
     }
@@ -97,6 +100,8 @@ section {
         p { color: #fff }
         .chevron-right {
             padding: 12px;
+            &.green { display: none; }
+            &.white { display: block; }
             svg .cls-1 {
                 fill: #fff;
             }
