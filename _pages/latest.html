@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: latest
+---
+<div id="lastest-projects" class="container">
+  <div class="return"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/icons/arrow-left.svg" alt="Return"/></a></div>
+   {% assign projects = site.projects | sort: 'order' %}
+   {% for project in projects %}
+     {% if project.type == 'latest' %}
+       <div id="{{project.permalink}}" class="project-single">
+         <h1>{{ project.title }}</h1>
+         {{ project.content }}
+       </div>
+     {% endif %}
+   {% endfor %}
+</div>

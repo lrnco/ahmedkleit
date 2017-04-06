@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 <!-- Welcome -->
@@ -62,7 +62,7 @@ layout: home
 
 
 <!-- Latest Projects -->
-<section id="latest-projects" class="border-bottom">
+<section id="latest" class="border-bottom">
     <div class="container">
       <h2 class="title">latest projects</h2>
       <p class="description">That's the fun part about me. Important to know: I love traveling, I talk a lot, and I'm always in good company...</p>
@@ -70,8 +70,8 @@ layout: home
     <div id="see-more-projects">
       {% assign projects = site.projects | sort: 'order' %}
       {% for project in projects %}
-        {% if project.type == 'see-more' and project.order <= 8 %}
-        <a href="{{ site.baseurl }}{{ project.permalink }}">
+        {% if project.type == 'latest' and project.order <= 8 %}
+        <a href="{{ site.baseurl }}/latest#{{ project.permalink }}">
           <div class="project">
             <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
           </div>
