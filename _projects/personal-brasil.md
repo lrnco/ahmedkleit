@@ -11,14 +11,14 @@ Personal Brazil is the platform for you to meet your personal trainer. We connec
 
 ![alt text]({{ site.baseurl }}/uploads/personal-a.jpg "Tela-a")
 
-![alt text]({{ site.baseurl }}/uploads/personal-b.jpg "Tela-a")
+![alt text]({{ site.baseurl }}/uploads/personal-b.jpg "Tela-b")
 
-![alt text]({{ site.baseurl }}/uploads/personal-c.jpg "Tela-a")
+![alt text]({{ site.baseurl }}/uploads/personal-c.jpg "Tela-c")
 
-![alt text]({{ site.baseurl }}/uploads/personal-d.jpg "Tela-a")
+![alt text]({{ site.baseurl }}/uploads/personal-d.jpg "Tela-d")
 
-![alt text]({{ site.baseurl }}/uploads/personal-e.jpg "Tela-a")
+![alt text]({{ site.baseurl }}/uploads/personal-e.jpg "Tela-e")
 
-![alt text]({{ site.baseurl }}/uploads/personal-f.jpg "Tela-a")
+![alt text]({{ site.baseurl }}/uploads/personal-f.jpg "Tela-f")
 
-![alt text]({{ site.baseurl }}/uploads/personal-g.jpg "Tela-a")
+![alt text]({{ site.baseurl }}/uploads/personal-g.jpg "Tela-g")
