@@ -24,7 +24,7 @@ layout: default
     {% assign projects = site.projects | sort: 'order' %}
     {% for project in projects %}
       {% if project.type == 'main' %}
-      <a href="{{ project.permalink }}" target="_blank">
+      <a href="{{ project.link }}" target="_blank">
         <div class="project">
           <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
           <div class="project-detail">
