@@ -29,6 +29,14 @@ nav {
     justify-content: space-between;
     border-bottom: solid 1px $color__light_gray;
 
+    &.fixed {
+        position: fixed;
+        width: calc(100% - 24px);
+        background: $color__lighten_gray;
+        z-index: 1;
+        top: 0;
+    }
+
     #nav-menu {
         display: flex;
         align-items: center;
@@ -110,13 +118,6 @@ footer {
 
 @include media-breakpoint-up(md) {
     nav {
-        &.fixed {
-            position: fixed;
-            width: calc(100% - 24px);
-            background: #fff;
-            z-index: 1;
-            top: 0;
-        }
         height: 60px;
         a img { height: 30px; }
         #nav-menu {
