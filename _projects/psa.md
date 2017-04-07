@@ -2,13 +2,11 @@
 layout: portfolio
 type: latest
 permalink: psa
-title: Endeavor 1
-image: endeavor.jpg
+title: PSA - Peugeot Citroën
+image: PSA-thumb.jpg
 order: 1
 ---
 
-Descrição do projeto, bla bla bla em até 3 a 4 linhas sempre! Imagine solutions that add value. All this inspires me every day. Think of improvements for a better experience. All this inspires me every day. All this [www.linkdesite.com](www.linkdesite.com)
+For reasons of confidentiality policy at PSA, is forbidden show the new interface cars. This is the current version of Citroën’s board computers. I worked on the new version development, it will be launched next year.  All this [www.groupe-psa.com/en](www.groupe-psa.com)
 
-![alt text]({{ site.baseurl }}/uploads/carro.jpg "Title Text")
-
-![alt text]({{ site.baseurl }}/uploads/carro.jpg "Title Text")
+![alt text]({{ site.baseurl }}/uploads/PSA-a.jpg "Tela a")
