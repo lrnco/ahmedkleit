@@ -18,6 +18,7 @@ image: bmk-partners.jpg
 order: 1  # Ordem em que o projeto é apresentado
 
 # Subtitle e Description são usados no projetos tipo main
+link: https://google.com/  # link externo
 subtitle: Unlocking Value
 description: BMK é uma consultoria ...
 ---
