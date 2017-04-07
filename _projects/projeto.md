@@ -1,7 +1,7 @@
 ---
 layout: portfolio  
 type: main   # main ou latest
-permalink: bmk-partners    
+permalink: portfolio 
 title: BMK Partners 
 image: bmk-partners.jpg 
 order: 1  # Ordem em que o projeto é apresentado
