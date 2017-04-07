@@ -24,8 +24,8 @@ $(document).ready(function(){
 
 	var feed = new Instafeed({
       get: 'user',
-      userId: '35211881',
-      accessToken: '35211881.95346ed.2a001f82d61a4a999880b89007a4bcf7',
+      userId: '801384',
+      accessToken: '801384.886a748.b302716650804d56973632771462700a',
       links: true,
       limit: '12',
   });
