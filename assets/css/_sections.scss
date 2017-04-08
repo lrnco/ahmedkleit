@@ -1,5 +1,5 @@
 // Sections
-section { 
+section {
     margin-top: 24px !important;
     margin-bottom: 24px !important;
     > h2, .container > h2 { color: $color__main; }
@@ -15,6 +15,8 @@ section {
 
 @include media-breakpoint-up(sm) {
     section {
+        margin-top: 60px !important;
+        margin-bottom: 120px !important;
         h2.title {
             text-align: center;
         }
@@ -138,7 +140,7 @@ section {
 #see-more-projects {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     max-width: 1530px;
     margin: 0 auto;
     a { flex: 0 1 50%; }
@@ -185,6 +187,7 @@ section {
 }
 @include media-breakpoint-up(md) {
     #see-more-projects a { flex: 0 1 24%; padding: 3px; }
+
 }
 @include media-breakpoint-up(lg) {
     #see-more-projects a { padding: 5px; }

@@ -28,6 +28,7 @@ $(document).ready(function(){
       accessToken: '801384.886a748.b302716650804d56973632771462700a',
       links: true,
       limit: '12',
+			resolution: 'low_resolution'
   });
 	if (window.location.pathname === '/' || window.location.pathname === '/ahmedkleit/') {
 	  feed.run();
