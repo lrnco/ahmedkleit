@@ -4,7 +4,7 @@ type: latest
 permalink: bpce
 title: Concept App BPCE
 image: caisse-thumb.jpg
-order: 1
+order: 2
 ---
 
 Has freelance, worked in partnership with another designers to create a concept for the new Bank app. This app is dedicated to young people. 
