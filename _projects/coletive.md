@@ -2,7 +2,7 @@
 layout: portfolio
 type: main
 permalink: coletive
-link: https://www.facebook.com/groups/1319748544785456/
+link: https://101chefs.com.br/app/
 title: Coletive.Co
 subtitle: Building together
 description: Coletive.cc is a collaborative app, to connect cool projects / ideas with cool people who are willing to help!
