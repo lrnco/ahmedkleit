@@ -15,11 +15,3 @@ In development
 ![alt text]({{ site.baseurl }}/uploads/personal-b.jpg "Tela-b")
 
 ![alt text]({{ site.baseurl }}/uploads/personal-c.jpg "Tela-c")
-
-![alt text]({{ site.baseurl }}/uploads/personal-d.jpg "Tela-d")
-
-![alt text]({{ site.baseurl }}/uploads/personal-e.jpg "Tela-e")
-
-![alt text]({{ site.baseurl }}/uploads/personal-f.jpg "Tela-f")
-
-![alt text]({{ site.baseurl }}/uploads/personal-g.jpg "Tela-g")
