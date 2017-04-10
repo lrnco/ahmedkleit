@@ -2,7 +2,7 @@ social:
  - title: facebook
    url: https://www.facebook.com/ahmedkleit
  - title: linkedin
-   url: https://www.linkedin.com/in/ahmedkleit/
+   url: href="https://www.linkedin.com/in/ahmedkleit/" target="_newtab"
  - title: instagram
    url: https://www.instagram.com/ahmedkleit/
 
