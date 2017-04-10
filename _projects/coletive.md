@@ -2,7 +2,7 @@
 layout: portfolio
 type: main
 permalink: coletive
-link:
+link: https://lrnco.github.io/ahmedkleit/
 title: Coletive.Co
 subtitle: Building together
 description: Coletive.cc is a collaborative app, to connect cool projects / ideas with cool people who are willing to help!
