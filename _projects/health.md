@@ -1,6 +1,5 @@
 ---
 layout: portfolio
-type: latest
 permalink: health
 title: Healthier Internet
 ---
