@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 type: latest
-permalink: bpce
+permalink: caisse
 title: Concept App BPCE
 image: caisse-thumb.jpg
 order: 2
