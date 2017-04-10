@@ -2,10 +2,11 @@
 layout: portfolio
 type: main
 permalink: coletive
-link: https://101chefs.com.br/app/
+link: https://www.facebook.com/groups/1319748544785456/
 title: Coletive.Co
-subtitle: Show your talents in the kitchen
-description: A platform to connect those who cook to those who wants to eat well. Cook that cake, pie, cookies, the secret recipe of your family, or your healthy meal and earn money by selling to those who do not want to spend money eating in restaurants. It is easy and practical and you can also help your neighbors.
+subtitle: Building together
+description: Coletive.cc is a collaborative app, to connect cool projects / ideas with cool people who are willing to help!
+So if you have free time to help with cool projects, but you do not know where to start, or if you're on the other side, full of ideas and needing hands to help. Feel free, post your ideas, or come help! (under development)
 image: coletive.jpg
 order: 3
 ---
