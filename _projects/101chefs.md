@@ -1,8 +1,8 @@
 ---
+title: 101 Chefs
+permalink: 101chefs
 layout: portfolio
 type: latest
-permalink: 101chefs
-title: 101 Chefs
 image: 101-thumb.jpg
 order: 1
 ---

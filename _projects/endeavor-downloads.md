@@ -1,8 +1,8 @@
 ---
+title: Endeavor
+permalink: endeavor-download
 layout: portfolio
 type: latest
-permalink: endeavor-download
-title: Endeavor
 image: endeavor-thumb.jpg
 order: 3
 ---

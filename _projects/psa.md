@@ -1,8 +1,8 @@
 ---
+title: PSA - Peugeot Citroën
+permalink: psa
 layout: portfolio
 type: latest
-permalink: psa
-title: PSA - Peugeot Citroën
 image: PSA-thumb.jpg
 order: 1
 ---

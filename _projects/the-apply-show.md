@@ -1,8 +1,8 @@
 ---
+title: The Apply Show
+permalink: the-apply-show
 layout: portfolio
 type: latest
-permalink: the-apply-show
-title: The Apply Show
 image: happy-thumb.jpg
 order: 1
 ---

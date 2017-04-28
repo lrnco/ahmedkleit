@@ -1,8 +1,8 @@
 ---
+title: Personal Brasil
+permalink: personal-brasil
 layout: portfolio
 type: latest
-permalink: personal-brasil
-title: Personal Brasil
 image: personal-thumb.jpg
 order: 2
 ---

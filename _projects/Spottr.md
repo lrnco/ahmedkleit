@@ -1,8 +1,8 @@
 ---
+title: Spottr
+permalink: spottr
 layout: portfolio
 type: latest
-permalink: spottr
-title: Spottr
 image: spottr-thumb.jpg
 order: 4
 ---

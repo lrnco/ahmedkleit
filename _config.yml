@@ -1,27 +1,29 @@
-# Site Descriptions
+---
 title: Ahmed Kleit
-email: kleit.ahmed@gmail.com
-description: Ahmed Kleit Portfolio
-baseurl: ""
-url: ""
-
-# Build Settings
-markdown: kramdown
+timezone: UTC
 collections:
-  projects:
-    title: Projects
-    output: true
   pages:
     title: Pages
+    output: true
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
     output: true
   uploads:
     title: Uploads
     output: true
+email: kleit.ahmed@gmail.com
+description: Ahmed Kleit Portfolio
+baseurl: ''
+url: ''
+markdown: kramdown
 sass:
-  sass_dir: /assets/css
+  sass_dir: "/assets/css"
   style: compressed
 gems:
-  - jekyll-autoprefixer
+- jekyll-autoprefixer
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- Gemfile
+- Gemfile.lock

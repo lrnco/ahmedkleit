@@ -1,8 +1,8 @@
 ---
+title: Baobba
+permalink: baobba
 layout: portfolio
 type: latest
-permalink: baobba
-title: Baobba
 image: baobba-thumb.jpg
 order: 1
 ---
