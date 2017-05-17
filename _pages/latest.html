@@ -11,7 +11,7 @@ layout: default
      {% if project.type == 'latest' %}
        <div id="{{project.permalink}}" class="project-single">
          <h1>{{ project.title }}</h1>
-         {{ project.content }}
+         {{ project.content | markdownify }}
        </div>
      {% endif %}
    {% endfor %}
