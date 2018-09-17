@@ -4,7 +4,7 @@ layout: default
 
 <!-- Welcome -->
 <section id="main" class="container">
-    <img src="{{ site.baseurl }}/assets/icons/ahmed_brand.svg" alt="Ahmed Kleit"/>
+    <img src=".{{ site.baseurl }}/assets/icons/ahmed_brand.svg" alt="Ahmed Kleit"/>
     <p>
       Hi, my name is Ahmed Kleit.<br>
       27 years old, Brazilian, raised in Ivory Coast.<br>
@@ -13,7 +13,7 @@ layout: default
     </p>
     <div class="social-icons">
       {% for icon in site.data.main.social %}
-        <div><a href="{{ icon.url }}"><img src="{{ site.baseurl }}/assets/icons/{{ icon.title }}.svg" alt="{{ icon.title }}"/></a></div>
+        <div><a href="{{ icon.url }}"><img src=".{{ site.baseurl }}/assets/icons/{{ icon.title }}.svg" alt="{{ icon.title }}"/></a></div>
       {% endfor %}
     </div>
 </section>
@@ -26,10 +26,10 @@ layout: default
       {% if project.type == 'main' %}
       <a href="{{ project.link }}" target="_blank">
         <div class="project">
-          <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
+          <img src=".{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
           <div class="project-detail">
-            <div class="chevron-right green"><img src="{{ site.baseurl }}/assets/icons/chevron-right.svg" alt="{{ project.title }}"/></div>
-            <div class="chevron-right white"><img src="{{ site.baseurl }}/assets/icons/chevron-right-white.svg" alt="{{ project.title }}"/></div>
+            <div class="chevron-right green"><img src=".{{ site.baseurl }}/assets/icons/chevron-right.svg" alt="{{ project.title }}"/></div>
+            <div class="chevron-right white"><img src=".{{ site.baseurl }}/assets/icons/chevron-right-white.svg" alt="{{ project.title }}"/></div>
             <h2>{{ project.title }}</h2>
             <h3>{{ project.subtitle }}</h3>
             <p><small>{{ project.description }}</small></p>
@@ -73,7 +73,7 @@ layout: default
         {% if project.type == 'latest' and project.order <= 8 %}
         <a href="{{ site.baseurl }}/{{ project.permalink }}">
           <div class="project">
-            <img src="{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
+            <img src=".{{ site.baseurl }}/uploads/{{ project.image }}" alt="{{ project.title }}"/>
           </div>
         </a>
         {% endif %}

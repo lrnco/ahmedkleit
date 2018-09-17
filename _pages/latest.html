@@ -5,7 +5,7 @@ layout: default
 ---
 
 <div id="lastest-projects" class="container">
-  <div class="return"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/icons/arrow-left.svg" alt="Return"/></a></div>
+  <div class="return"><a href="{{ site.baseurl }}/"><img src=".{{ site.baseurl }}/assets/icons/arrow-left.svg" alt="Return"/></a></div>
    {% assign projects = site.projects | sort: 'order' %}
    {% for project in projects %}
      {% if project.type == 'latest' %}

@@ -3,10 +3,10 @@
       <small>&copy; {{ site.title }} {{ site.time | date: '%Y' }}</small>
       <div class="social-icons">
         {% for icon in site.data.main.social %}
-          <a href="{{ icon.url }}"><img src="{{ site.baseurl }}/assets/icons/{{ icon.title }}-dark.svg" alt="{{ icon.url }}"/></a>
+          <a href="{{ icon.url }}"><img src=".{{ site.baseurl }}/assets/icons/{{ icon.title }}-dark.svg" alt="{{ icon.url }}"/></a>
         {% endfor %}
       </div>
-      <div id="scroll-up"><img src="{{ site.baseurl }}/assets/icons/scroll-up.svg" alt="Scroll Up"/></div>
+      <div id="scroll-up"><img src=".{{ site.baseurl }}/assets/icons/scroll-up.svg" alt="Scroll Up"/></div>
     </footer>
     <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
     <script type="text/javascript" src="assets/js/instafeed.min.js"></script>
